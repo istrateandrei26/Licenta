@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  sportnetdb:
+    container_name: sportnet-db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - 7180:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=password@12345#
+    networks:
+      - servicesnetwork
+
+networks:
+  servicesnetwork:

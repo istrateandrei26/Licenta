@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  eventsservice:
+    container_name: eventsservice-app
+    image: ${DOCKER_REGISTRY-}eventsservice
+    build:
+      context: .
+      dockerfile: EventsService/Dockerfile
+    ports:
+      - 7011:80
+    depends_on:
+      - sportnetdb
+    environment:
+      - DB_HOST=sportnetdb
+      - DB_NAME=SportNet
+      - DB_SA_PASSWORD=password@12345#
+    networks:
+      - servicesnetwork
+
+networks:
+  servicesnetwork:

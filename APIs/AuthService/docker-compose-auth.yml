@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  authservice:
+    container_name: authservice-app
+    image: ${DOCKER_REGISTRY-}authservice
+    build:
+      context: .
+      dockerfile: AuthService/AuthService/Dockerfile
+    ports:
+      - 7179:80
+    depends_on:
+      - sportnetdb
+    environment:
+      - DB_HOST=sportnetdb
+      - DB_NAME=SportNet
+      - DB_SA_PASSWORD=password@12345#
+    networks:
+      - servicesnetwork
+
+networks:
+  servicesnetwork:

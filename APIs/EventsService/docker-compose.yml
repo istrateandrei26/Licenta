@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  eventsservice:
+    image: ${DOCKER_REGISTRY-}eventsservice
+    build:
+      context: .
+      dockerfile: EventsService/Dockerfile

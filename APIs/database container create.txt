@@ -1,0 +1,2 @@
+docker cp sportnet.bak sportnet-db:/tmp/
+/opt/mssql-tools/bin/sqlcmd -S 127.0.0.1 -U sa -P password@12345# -Q "RESTORE DATABASE SportNet FROM DISK='/tmp/sportnet.bak' WITH MOVE 'SportNet' TO '/var/opt/mssql/data/SportNet.mdf', MOVE 'SportNet_log' TO '/var/opt/mssql/data/SportNet_log.ldf'"

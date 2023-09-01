@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChatService.Models.Conversation" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAQgAAAA=</HashCode>
+      <FileName>Models\Conversation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.ConversationMember" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAQgAABAAAAIAAAAAAAAAABA=</HashCode>
+      <FileName>Models\ConversationMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.Event" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAgAQAAACAAAiAAIAAAAAAAAAAAAAUAAAAAAAAAA=</HashCode>
+      <FileName>Models\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.EventMember" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAAAAAAAAAAAAAQAAAgAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EventMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.FriendRequest" Collapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACwAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\FriendRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.Friendship" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAgAAAABAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Friendship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.GroupMember" Collapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAQgAABAAAAIAAAAAAAAAABA=</HashCode>
+      <FileName>Models\GroupMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.Location" Collapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAgAAAAAAAAAIAAIAAAAAIgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.LocationCoordinate" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAEAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LocationCoordinate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.LocationsSportCategory" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAAAAgQAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LocationsSportCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.Message" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAgAgAQAACAAAAAAAAAABAAAJIAAAAAACBAAAA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.SportCategory" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAQAAgAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SportCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.SportNetContext" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABSAAAwgQAAIAAAIAAEAAEgIAAABAQAAAAQAAAAA=</HashCode>
+      <FileName>Models\SportNetContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.User" Collapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAEABACgEAAAKAAAAAAAAAgCAAAgAQAAMAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.UsersCredential" Collapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAAAAQAAAAAAAAQAAAAgAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UsersCredential.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Models.UserSport" Collapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAACAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UserSport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Services.Chat.MessageService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAAAAEABAAAIAABAAgICAggGAAAAAAEQAAAABA=</HashCode>
+      <FileName>Services\Chat\MessageService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatService.Services.User.UserService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAhAA=</HashCode>
+      <FileName>Services\User\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatService.Services.Details.DetailsService" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgACBAAAAAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Details\DetailsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatService.Services.Authorization.AuthorizeAttribute" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Authorization\AuthorizeAttribute.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ChatService.Services.Authorization.ContextUser" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Authorization\ContextUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Services.Authorization.TokenBasedAuthorizationManager" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Services\Authorization\TokenBasedAuthorizationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.BasicResponse">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAIAAAAAA=</HashCode>
+      <FileName>DTOs\BasicResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.ConversationObject" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>DTOs\ConversationObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.FriendRequestObject" Collapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\FriendRequestObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.GetFriendRequestsRequest" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\GetFriendRequestsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.GetFriendRequestsResponse">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\GetFriendRequestsResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.GetFriendsRequest" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\GetFriendsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.GetFriendsResponse">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\GetFriendsResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.LastMessage" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAgAAAAQEAAAAAAgAgBAAAAAAAAAAAChAAAA=</HashCode>
+      <FileName>DTOs\LastMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.MessageObject" Collapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAgAgAAAAAAAAAAAAAAgBAAAAAAAAAAACBAAAA=</HashCode>
+      <FileName>DTOs\MessageObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.RetrieveChatListRequest" Collapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\RetrieveChatListRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.RetrieveChatListResponse">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\RetrieveChatListResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.RetrieveMessagesRequest" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\RetrieveMessagesRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.RetrieveMessagesResponse">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAQAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAA=</HashCode>
+      <FileName>DTOs\RetrieveMessagesResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.DTOs.UserObject" Collapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAACAAAAAKAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTOs\UserObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Controllers.ChatController" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAEAAABAACAAAAgAAAAAEAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Controllers\ChatController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChatService.Controllers.ChatHub" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GCAAAEAAAAEAAAAAACAEABAoBAAACAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Controllers\ChatHub.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ChatService.Services.Chat.IMessageService" Collapsed="true">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAAAAAAAAAAIAABAAgICAggGAAAAAAAQAAAABA=</HashCode>
+      <FileName>Services\Chat\IMessageService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChatService.Services.User.IUserService" Collapsed="true">
+    <Position X="13.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhAA=</HashCode>
+      <FileName>Services\User\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChatService.Services.Details.IDetailsService">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgACBAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Details\IDetailsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ChatService.DTOs.Type">
+    <Position X="1.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAABAAACCAA=</HashCode>
+      <FileName>DTOs\BasicResponse.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
