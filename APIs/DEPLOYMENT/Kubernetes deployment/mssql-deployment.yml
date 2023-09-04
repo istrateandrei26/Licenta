@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sqlserver
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 1433
+    targetPort: 1433
+    protocol: TCP
+  selector:
+    app: sqlserver
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqlserver
+  labels:
+    app: sqlserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqlserver
+  template:
+    metadata:
+      labels:
+        app: sqlserver
+    spec:
+      containers:
+      - name: sqlserver
+        image: localhost:32000/sqlserverdb
+        ports:
+        - containerPort: 1433
+        env:
+        - name: SA_PASSWORD
+          value: "password@12345#"
+        - name: ACCEPT_EULA
+          value: "Y"
+        volumeMounts:
+        - name: mssql-data
+          mountPath: /var/opt/mssql
+      volumes:
+      - name: mssql-data
+        persistentVolumeClaim:
+          claimName: mssql-data

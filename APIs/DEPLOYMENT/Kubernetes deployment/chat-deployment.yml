@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatservice
+  labels:
+    app: chatservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatservice
+  template:
+    metadata:
+      labels:
+        app: chatservice
+    spec:
+      containers:
+      - name: chatservice
+        image: istrateandrei26/chatservice
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: sqlserver
+        - name: DB_NAME
+          value: SportNet
+        - name: DB_SA_PASSWORD
+          value: password@12345#
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chatservice
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30008
+    protocol: TCP
+  externalIPs:
+  - 10.0.0.4
+  selector:
+    app: chatservice

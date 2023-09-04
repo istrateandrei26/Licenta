@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eventsservice
+  labels:
+    app: eventsservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eventsservice
+  template:
+    metadata:
+      labels:
+        app: eventsservice
+    spec:
+      containers:
+      - name: eventsservice
+        image: istrateandrei26/eventsservice
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: sqlserver
+        - name: DB_NAME
+          value: SportNet
+        - name: DB_SA_PASSWORD
+          value: password@12345#
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eventsservice
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30009
+    protocol: TCP
+  externalIPs:
+  - 10.0.0.4
+  selector:
+    app: eventsservice

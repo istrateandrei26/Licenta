@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  chatservice:
+    container_name: chatservice-app
+    image: istrateandrei26/chatservice
+    ports:
+      - 7013:80
+    depends_on:
+      - sportnetdb
+    environment:
+      - DB_HOST=sportnetdb
+      - DB_NAME=SportNet
+      - DB_SA_PASSWORD=password@12345#
+    networks:
+      - servicesnetwork
+
+networks:
+  servicesnetwork:

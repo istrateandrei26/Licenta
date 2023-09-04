@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authservice
+  labels:
+    app: authservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authservice
+  template:
+    metadata:
+      labels:
+        app: authservice
+    spec:
+      containers:
+      - name: authservice
+        image: istrateandrei26/authservice
+        ports:
+        - containerPort: 443
+        volumeMounts:
+        - name: tls-certs
+          mountPath: "/app/tls-certs"
+          readOnly: true
+        env:
+        - name: ASPNETCORE_URLS
+          value: "https://+443;http://+80"
+        - name: ASPNETCORE_Kestrel__Certificates__Default__Password
+          value: ""
+        - name: ASPNETCORE_Kestrel__Certificates__Default__Path
+          value: "/app/tls-certs/auth_certificate.pfx"
+        - name: ASPNETCORE_HTTPS_PORT
+          value: "443"
+        - name: DB_HOST
+          value: sqlserver
+        - name: DB_NAME
+          value: SportNet
+        - name: DB_SA_PASSWORD
+          value: password@12345#
+        - name: JWT_SIGNING_KEY
+          valueFrom:
+            secretKeyRef:
+              name: jwt_signing_key_secret
+              key: jwt_signing_key
+      volumes:
+      - name: tls-certs
+        secret:
+          secretName: authservice-tls-secret
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: authservice
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 443
+    targetPort: 443
+    nodePort: 30007
+    protocol: TCP
+  externalIPs:
+  - 10.0.0.4
+  selector:
+    app: authservice

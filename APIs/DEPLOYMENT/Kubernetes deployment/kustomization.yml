@@ -1,0 +1,9 @@
+resources:
+  - auth_tls_secret.yml
+  - chat_tls_secret.yml
+  - events_tls_secret.yml
+  - pvc.yml
+  - mssql-deployment.yml
+  - auth-deployment.yml
+  - chat-deployment.yml
+  - events-deployment.yml

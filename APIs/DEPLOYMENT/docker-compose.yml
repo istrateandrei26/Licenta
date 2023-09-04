@@ -1,0 +1,33 @@
+version: '3.4'
+
+networks:
+  servicesnetwork:
+
+
+services:
+  sportnetdb:
+    container_name: sportnet-db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+        - 7180:1443
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=password@12345#
+    networks:
+        - servicesnetwork
+  authservice:
+    container_name: authservice-app
+    image: ${DOCKER_REGISTRY-}authservice
+    build:
+      context: .
+      dockerfile: AuthService/Dockerfile
+    ports:
+        - 7179:80
+    depends_on:
+        - sportnetdb
+    environment:
+        - DB_HOST=sportnetdb
+        - DB_NAME=SportNet
+        - DB_SA_PASSWORD=password@12345#
+    networks:
+        - servicesnetwork
